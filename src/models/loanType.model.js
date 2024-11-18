@@ -25,7 +25,7 @@ const loanTypeSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-userSchema.plugin(AutoIncrement, { inc_field: "id" });
+loanTypeSchema.plugin(AutoIncrement, { inc_field: "id" });
 
 
 export const LoanType = mongoose.model("LoanType", loanTypeSchema);
